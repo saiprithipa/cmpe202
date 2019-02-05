@@ -27,16 +27,6 @@ public class QuarterGumballMachine extends AbstractGumballMachine
         }
         state.insertCoin(coin);
     }
-
-    public void turnCrank()
-    {
-        state.turnCrank();
-    }
-    
-    public void ejectCoin() 
-    {
-        state.ejectCoin();
-    }
     
     public int getRequiredAmount() {
         return 25;
