@@ -1,0 +1,29 @@
+
+/**
+ * Write a description of class SoldOutState here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class SoldOutState implements State
+{
+    // instance variables - replace the example below with your own
+    GumballMachine gumballMachine;
+
+    /**
+     * Constructor for objects of class SoldOutState
+     */
+    public SoldOutState(GumballMachine gumballMachine)
+    {
+        // initialise instance variables
+        this.gumballMachine = gumballMachine;
+    }
+
+    public void insertCoin(Coin coin) {
+        System.out.println( "Insert Coin: No More Gumballs!  Sorry, can't return your quarter." ) ;
+    }
+    
+    public void turnCrank() {
+        System.out.println( "Turn Crank: Sorry, No More Gumballs! Please come later." ) ;
+    }
+}

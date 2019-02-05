@@ -14,6 +14,28 @@ public interface GumballMachine
      * @return   the result produced by sampleMethod
      */
     void insertCoin(Coin coin);
-    
+
     void turnCrank();
+
+    void setState(State state);
+
+    State getNoCoinState();
+
+    State getHasFewerCoinState();
+
+    State getHasRequiredCoinsState();
+
+    State getSoldState();
+
+    State getSoldOutState();
+    
+    int getInventory();
+    
+    void updateInventory(int count);
+    
+    int getCurrentAmount();
+    
+    void resetAmount();
+    
+    int getRequiredAmount();
 }

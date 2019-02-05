@@ -2,8 +2,8 @@
 public class Main {
     public static void main(String[] args) {
         //testQuarterGumballMachine();
-        testTwoQuarterGumballMachine();
-        //testAllCoinGumballMachine();
+        //testTwoQuarterGumballMachine();
+        testAllCoinGumballMachine();
     }
     
     private static void testQuarterGumballMachine() {
