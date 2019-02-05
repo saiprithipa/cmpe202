@@ -18,7 +18,6 @@ public abstract class AbstractGumballMachine implements GumballMachine
     protected int num_gumballs;
     protected int current_amount;
     
-    
     public String toString() {
         return "Inventory : " + this.num_gumballs + " , current amount: " + this.current_amount;
     }

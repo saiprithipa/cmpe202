@@ -1,9 +1,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        //testQuarterGumballMachine();
+        testQuarterGumballMachine();
         //testTwoQuarterGumballMachine();
-        testAllCoinGumballMachine();
+        //testAllCoinGumballMachine();
     }
     
     private static void testQuarterGumballMachine() {
@@ -20,6 +20,10 @@ public class Main {
         gumballMachine.turnCrank();
         gumballMachine.insertCoin( Coin.Quarter );
         gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.ejectCoin();
+        gumballMachine.turnCrank();
+        gumballMachine.ejectCoin();
 
         System.out.println(gumballMachine);
     }

@@ -16,6 +16,8 @@ public interface GumballMachine
     void insertCoin(Coin coin);
 
     void turnCrank();
+    
+    void ejectCoin();
 
     void setState(State state);
 

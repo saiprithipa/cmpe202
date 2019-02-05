@@ -28,4 +28,11 @@ public class HasFewerCoinState implements State
     public void turnCrank() {
         System.out.println( "Turn Crank: Please insert required amount" ) ;
     }
+    
+    public void ejectCoin() 
+    {
+        System.out.println( "Coin ejected!" ) ;
+        this.gumballMachine.resetAmount();
+        this.gumballMachine.setState(this.gumballMachine.getNoCoinState());
+    }
 }

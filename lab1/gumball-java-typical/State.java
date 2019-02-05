@@ -10,4 +10,6 @@ public interface State
     void insertCoin(Coin coin);
     
     void turnCrank();
+    
+    void ejectCoin();
 }

@@ -34,4 +34,11 @@ public class HasRequiredCoinsState implements State
             this.gumballMachine.setState(this.gumballMachine.getNoCoinState());
         }
     }
+    
+    public void ejectCoin() 
+    {
+        System.out.println( "Coin ejected!" ) ;
+        this.gumballMachine.resetAmount();
+        this.gumballMachine.setState(this.gumballMachine.getNoCoinState());
+    }
 }

@@ -36,6 +36,11 @@ public class AllCoinGumballMachine extends AbstractGumballMachine
         state.turnCrank();      
     }
     
+    public void ejectCoin() 
+    {
+        state.ejectCoin();
+    }
+    
     public int getRequiredAmount() {
         return 50;
     }

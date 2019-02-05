@@ -31,4 +31,10 @@ public class NoCoinState implements State
     public void turnCrank() {
         System.out.println( "Turn Crank: Please insert a coin" ) ;
     }
+    
+    public void ejectCoin() 
+    {
+        System.out.println( "No Coin to eject." ) ;
+        this.gumballMachine.resetAmount();
+    }
 }
