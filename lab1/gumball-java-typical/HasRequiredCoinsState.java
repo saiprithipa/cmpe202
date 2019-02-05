@@ -8,12 +8,12 @@
 public class HasRequiredCoinsState implements State
 {
     // instance variables - replace the example below with your own
-    GumballMachine gumballMachine;
+    AbstractGumballMachine gumballMachine;
 
     /**
      * Constructor for objects of class HasRequiredCoinsState
      */
-    public HasRequiredCoinsState(GumballMachine gumballMachine)
+    public HasRequiredCoinsState(AbstractGumballMachine gumballMachine)
     {
         // initialise instance variables
         this.gumballMachine = gumballMachine;

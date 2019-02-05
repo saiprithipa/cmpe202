@@ -19,25 +19,5 @@ public interface GumballMachine
     
     void ejectCoin();
 
-    void setState(State state);
-
-    State getNoCoinState();
-
-    State getHasFewerCoinState();
-
-    State getHasRequiredCoinsState();
-
-    State getSoldState();
-
-    State getSoldOutState();
-    
-    int getInventory();
-    
-    void updateInventory(int count);
-    
-    int getCurrentAmount();
-    
-    void resetAmount();
-    
     int getRequiredAmount();
 }

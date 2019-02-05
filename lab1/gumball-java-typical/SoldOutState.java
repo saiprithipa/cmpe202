@@ -8,12 +8,12 @@
 public class SoldOutState implements State
 {
     // instance variables - replace the example below with your own
-    GumballMachine gumballMachine;
+    AbstractGumballMachine gumballMachine;
 
     /**
      * Constructor for objects of class SoldOutState
      */
-    public SoldOutState(GumballMachine gumballMachine)
+    public SoldOutState(AbstractGumballMachine gumballMachine)
     {
         // initialise instance variables
         this.gumballMachine = gumballMachine;

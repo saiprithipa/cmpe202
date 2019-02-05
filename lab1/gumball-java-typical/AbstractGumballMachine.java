@@ -7,11 +7,10 @@
  */
 public abstract class AbstractGumballMachine implements GumballMachine
 {
-    protected State state;
-    public State noCoinState;
+    State state;
+    State noCoinState;
     State hasFewerCoinState;
     State hasRequiredCoinsState;
-    State soldState;
     State soldOutState;
     
     // instance variables - replace the example below with your own
@@ -36,10 +35,6 @@ public abstract class AbstractGumballMachine implements GumballMachine
     
     public State getHasRequiredCoinsState() { 
         return this.hasRequiredCoinsState;
-    }
-    
-    public State getSoldState() { 
-        return this.soldState;
     }
     
     public State getSoldOutState() { 
