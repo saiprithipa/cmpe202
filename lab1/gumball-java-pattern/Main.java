@@ -1,22 +1,71 @@
 
-
 public class Main {
+    public static void main(String[] args) {
+        testQuarterGumballMachine();
+        //testTwoQuarterGumballMachine();
+        //testAllCoinGumballMachine();
+    }
 
-	public static void main(String[] args) {
-		GumballMachine gumballMachine = new GumballMachine(5);
+    private static void testQuarterGumballMachine() {
+        GumballMachine gumballMachine = new QuarterGumballMachine(1);
 
-		System.out.println(gumballMachine);
+        System.out.println(gumballMachine);
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
 
-		gumballMachine.insertQuarter();
-		gumballMachine.turnCrank();
+        System.out.println(gumballMachine);
 
-		System.out.println(gumballMachine);
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.ejectCoin();
+        gumballMachine.turnCrank();
+        gumballMachine.ejectCoin();
+        gumballMachine.refill(2);
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
 
-		gumballMachine.insertQuarter();
-		gumballMachine.turnCrank();
-		gumballMachine.insertQuarter();
-		gumballMachine.turnCrank();
+        System.out.println(gumballMachine);
+    }
 
-		System.out.println(gumballMachine);
-	}
+    private static void testTwoQuarterGumballMachine() {
+        GumballMachine gumballMachine = new TwoQuarterGumballMachine(2);
+
+        System.out.println(gumballMachine);
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+    }
+
+    private static void testAllCoinGumballMachine() {
+        GumballMachine gumballMachine = new AllCoinGumballMachine(2);
+
+        System.out.println(gumballMachine);
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Quarter );
+        gumballMachine.insertCoin( Coin.Dime );
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+
+        gumballMachine.insertCoin( Coin.Nickel );
+        gumballMachine.turnCrank();
+        gumballMachine.insertCoin( Coin.Dime );
+        gumballMachine.turnCrank();
+
+        System.out.println(gumballMachine);
+    }
 }
