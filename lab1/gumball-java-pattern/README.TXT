@@ -10,3 +10,19 @@ NoCoinState.java :: A state of the gumball machine where no coin is provided.
 SoldOutState.java :: A state of the gumball machine when it is out of gumballs.
 
 Coin.java :: An enum which holds different types of coins.
+
+-----------
+Added Files
+-----------
+Class Diagram.jpeg
+State Diagram.jpeg
+
+-------------
+Removed Files
+-------------
+SoldState.java :: Taking care of this state in turnCrank() method within each state.
+
+---------------
+Removed Methods
+---------------
+dispense() method :: Dispense operation is performed when turnCrank() method is called.
