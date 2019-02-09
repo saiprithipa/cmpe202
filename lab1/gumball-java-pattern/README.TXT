@@ -1,6 +1,10 @@
-GumballMachine.java :: Modified class Gumball Machine to interface Gumball Machine - To provide a contract for all gumball machines that implement this interface.
+GumballMachine.java :: Modified class GumballMachine to interface GumballMachine - To provide a contract for all gumball machines that implement this interface.
 
 AbstractGumballMachine.java :: Added an abstract class to have common operations of all gumball machines to be placed in a single class. Made this class abstract as this class need not be instantiated.
+
+QuarterGumballMachine.java :: Added class QuarterGumballMachine which accepts one quarter from the user.
+TwoQuarterGumballMachine.java :: Added class TwoQuarterGumballMachine which accepts two quarters from the user.
+AllCoinGumballMachine.java :: Added class AllCoinGumballMachine which accepts coins like nickel, dime, quarter from the user.
 
 State :: An interface that different state classes of the gumball machine implements.
 
