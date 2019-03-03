@@ -1,6 +1,10 @@
+
 ---
+
 ***Class:*** Register
+
 ***Responsibilities:***
+
 1.	Knows list of customers in line.
 2.	Registers the customer information with customer information.
 3.	Removes customer from the queue.
@@ -11,6 +15,7 @@
 ---
 ---
 ***Class:*** AssignHandler
+
 ***Responsibilities:***
 1.	Decides on the best table size for the customer.
 2.	Assigns table to the customer
@@ -25,6 +30,7 @@
 ---
 
 ***Class:*** TableObserver
+
 ***Responsibilities:***
 1.	Knows list of free tables.
 2.	Observes the table availability.
@@ -38,6 +44,7 @@
 ---
 
 ***Class:*** TableAvailability
+
 ***Responsibilities:***
 1.	Knows list of all tables.
 2.	Notifies the TableObserver with table state.
@@ -50,6 +57,7 @@
 ---
 
 ***Class:*** CustomerInfo
+
 ***Responsibilities:***
 1.	Knows customer name.
 2.	Knows customer phone number.
@@ -63,6 +71,7 @@
 ---
 
 ***Class:*** TableInfo
+
 ***Responsibilities:***
 1.	Knows table id.
 2.	Knows chair count.
