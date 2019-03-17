@@ -1,92 +1,70 @@
+**Demo Run Output - ReceiptSlip and PackingSlip**
+
+![Demo Run Output - ReceiptSlip](https://github.com/saiprithipa/cmpe202/blob/master/lab6/output/receiptslip.png)
+![Demo Run Output - PackingSlip](https://github.com/saiprithipa/cmpe202/blob/master/lab6/output/packingslip.png)
+
+
+**Answer**
+
+          FIVE GUYS          
+     BURGERS AND FRIES          
+     STORE # CA-1294          
+     5353 ALMADEN EXPY N60          
+     SAN JOSE, CA 95118          
+     (P) 408-264-9300          
+
+     Sat Mar 16 20:07:58 PDT 2019 
+        FIVE GUYS        
+Order Number:     4        
+1   LITTLE_BACON_BURGER               5.59
+     {{{{ BACON }}}}                
+     LETTUCE             
+     TOMATO             
+     ->|GRILLED_ONION             
+     ->|GRILLED_MUSHROOMS             
+1   LITTLE_FRIES                      2.29
+
+Sub. Total :                          $7.88
+Tax :                                 $0.71
+Total :                               $8.59
+
+Cash $20                              $20.00
+Change                                $11.41
+Register: 1       Tran Seq No:        57845
+Cashier: John* M.             
+********************************************
+Don't throw away your receipt!!!
+Help Five Guys and you could win!
+
+
+
+
+
+Patties -      1 
+
+
+Order Number:  45
+          Sat Mar 16 20:07:58 PDT 2019
+           FIVE GUYS
+
+Sandwich#  1
+1   LITTLE_BACON_BURGER
+     LETTUCE             
+     TOMATO             
+     ->|GRILLED_ONION             
+     ->|GRILLED_MUSHROOMS             
+     {{{{ BACON }}}}                
+1   LITTLE_FRIES
+Register: 1       Tran Seq No:        57845
+Cashier: John* M.             
 
 ---
 
-***Class:*** Register
+***Design Pattern Used:*** Strategy Pattern, Composite Pattern, Factory Pattern
 
-***Responsibilities:***
+***Design Approach:***
+I have created two classes ReceiptSlip and PackingSlip which implements an interface ISlip. These two classes uses composite pattern by defining the components within them namely Burger, Toppings and Fries. The components are added in order as per the display requirement in these two classes. Both the classes maintains a component array where components are added in order.
+The packing and reciept display logic is abstracted out in strategy classes - ReceiptSlipStrategy and PackingSlipStrategy which implements an interface ISlipStrategy. The strategy classes maintain an instance of current ISlip object whose display method it invokes as part of displaying complete slip. This way I take advantage of strategy pattern while using same order request from the user.
 
-1.	Knows list of customers in line.
-2.	Registers the customer information with customer information.
-3.	Removes customer from the queue.
-
-***Collaborators:***
-- AssignHandler
-- CustomerInfo
+***Strategy Pattern:*** ReceiptSlipStrategy.java, PackingSlipStrategy.java
 ---
----
-***Class:*** AssignHandler
-
-***Responsibilities:***
-1.	Decides on the best table size for the customer.
-2.	Assigns table to the customer
-3.	Assigns table to next customer in line.
-
-***Collaborators:***
-- TableObserver
-- TableAvailability
-- CustomerInfo
-
----
----
-
-***Class:*** TableObserver
-
-***Responsibilities:***
-1.	Knows list of free tables.
-2.	Observes the table availability.
-3.	Provides free table to AssignHandler.
-
-***Collaborators:***
-- TableAvailability
-- AssignHandler
-
----
----
-
-***Class:*** TableAvailability
-
-***Responsibilities:***
-1.	Knows list of all tables.
-2.	Notifies the TableObserver with table state.
-3.	Updates the table availability on state change.
-
-***Collaborators:***
-- TableObserver
-
----
----
-
-***Class:*** CustomerInfo
-
-***Responsibilities:***
-1.	Knows customer name.
-2.	Knows customer phone number.
-3.	Knows number of party.
-
-***Collaborators:***
-- Register
-- AssignHandler
-
----
----
-
-***Class:*** TableInfo
-
-***Responsibilities:***
-1.	Knows table id.
-2.	Knows chair count.
-3.	Knows table is free or not.
-
-***Collaborators:***
-- TableAvailability
-
----
-
-### Design Pattern Used: 
-***Observer pattern***
-TableAvailability object notifies the TableObserver on the free tables available.And the TableObserver updates its state.
-Participants: Here, the subject is TableAvailability and the observer is TableObserver.
-
-***Chain of Responsibility pattern***
-Register class gets the table to be assigned from the AssignHandler and matches it with the customer in line. If customer confirms, the table is assigned to them (first customer in line.) If the customer leaves or the table does not fit, Register class tries to match it with the next customer in line.
-Participants: Here the Client is Customer and the Handler is Register.
