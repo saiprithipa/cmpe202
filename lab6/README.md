@@ -3,8 +3,18 @@
 ![Demo Run Output - ReceiptSlip](https://github.com/saiprithipa/cmpe202/blob/master/lab6/output/receiptslip.png)
 ![Demo Run Output - PackingSlip](https://github.com/saiprithipa/cmpe202/blob/master/lab6/output/packingslip.png)
 
+---
 
-**Answer**
+***Design Pattern Used:*** Strategy Pattern, Factory Pattern
+
+***Design Approach:***
+I have created two classes ReceiptSlip and PackingSlip which implements an interface ISlip. These two classes uses composite pattern by defining the components within them namely Burger, Toppings and Fries. The components are added in order as per the display requirement in these two classes. Both the classes maintains a component array where components are added in order.
+The packing and reciept display logic is abstracted out in strategy classes - ReceiptSlipStrategy and PackingSlipStrategy which implements an interface ISlipStrategy. The strategy classes maintain an instance of current ISlip object whose display method it invokes as part of displaying complete slip. This way I take advantage of strategy pattern while using same order request from the user.
+
+***Strategy Pattern:*** ReceiptSlipStrategy.java, PackingSlipStrategy.java
+---
+
+***Answer***
 
           FIVE GUYS          
      BURGERS AND FRIES          
@@ -57,14 +67,3 @@ Sandwich#  1
 1   LITTLE_FRIES
 Register: 1       Tran Seq No:        57845
 Cashier: John* M.             
-
----
-
-***Design Pattern Used:*** Strategy Pattern, Factory Pattern
-
-***Design Approach:***
-I have created two classes ReceiptSlip and PackingSlip which implements an interface ISlip. These two classes uses composite pattern by defining the components within them namely Burger, Toppings and Fries. The components are added in order as per the display requirement in these two classes. Both the classes maintains a component array where components are added in order.
-The packing and reciept display logic is abstracted out in strategy classes - ReceiptSlipStrategy and PackingSlipStrategy which implements an interface ISlipStrategy. The strategy classes maintain an instance of current ISlip object whose display method it invokes as part of displaying complete slip. This way I take advantage of strategy pattern while using same order request from the user.
-
-***Strategy Pattern:*** ReceiptSlipStrategy.java, PackingSlipStrategy.java
----
