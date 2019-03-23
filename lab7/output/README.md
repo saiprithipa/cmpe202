@@ -1,4 +1,10 @@
+
+**Demo Run Output - Receipt**
+
+![Demo Run Output - Receipt](https://github.com/saiprithipa/cmpe202/blob/master/lab7/output/demorun.PNG)
+
 DemoRun Output:
+---
 Order
 
  Build Your Own Burger 25.00
