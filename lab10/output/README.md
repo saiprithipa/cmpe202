@@ -1,3 +1,30 @@
+# Lab 10 
+
+**Feature Oriented Programming**
+
+**Configuration**
+
+![alt Image of config in FeatureIDE(GumballMachineV1](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV1_QTR50_config.png)
+
+**Output of the above configuration**
+
+![alt Output](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV1_QTR50_output.png)
+
+
+**Configuration**
+
+![alt Image of config in FeatureIDE(GumballMachineV2](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_config.png)
+
+
+**Model Tree**
+![alt Model](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_model.png)
+
+**Output of the above configuration**
+
+![alt Output](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_output.png)
+
+# Comparison of GumballMachine(Lab1) and GumballMachineV1(Lab10) - Object Oriented vs Feature Oriented
+
 Object Oriented Programming (Lab1)
 
 Using BlueJ, I was able to implement the Lab1 to allow three gumball machine models "QuarterGumballMachine", "TwoQuarterGumballMachine" and "AllCoinGumballMachine"
