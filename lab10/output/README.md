@@ -2,6 +2,7 @@
 
 **Feature Oriented Programming**
 
+**GumballMachineV1**
 **Configuration**
 
 ![alt Image of config in FeatureIDE(GumballMachineV1](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV1_QTR50_config.png)
@@ -11,6 +12,7 @@
 ![alt Output](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV1_QTR50_output.png)
 
 
+**GumballMachineV2**
 **Configuration**
 
 ![alt Image of config in FeatureIDE(GumballMachineV2](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_config.png)
