@@ -19,6 +19,7 @@
 
 
 **Model Tree**
+
 ![alt Model](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_model.png)
 
 **Output of the above configuration**
@@ -28,16 +29,14 @@
 **GumballMachineV2**
 **Slot Model Configuration**
 
-![alt Image of config in FeatureIDE(GumballMachineV2 Slot_Model]
-(https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_config.png)
+![alt Image of config in FeatureIDE(GumballMachineV2 Slot_Model](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_config.png)
 
 **Model Tree**
 
-![alt Model]
-(https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_model.png)
+![alt Model](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_model.png)
 
 **Output of the above configuration**
-![alt Output] (https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_Outputfull.png)
+![alt Output](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_Outputfull.png)
 
 # Comparison of GumballMachine(Lab1) and GumballMachineV1(Lab10) - Object Oriented vs Feature Oriented
 
