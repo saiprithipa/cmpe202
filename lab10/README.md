@@ -13,7 +13,7 @@
 
 
 **GumballMachineV2**
-**Configuration**
+**Crank Model Configuration**
 
 ![alt Image of config in FeatureIDE(GumballMachineV2](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_config.png)
 
@@ -24,6 +24,20 @@
 **Output of the above configuration**
 
 ![alt Output](https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_COST25_CRANKMODEL_output.png)
+
+**GumballMachineV2**
+**Slot Model Configuration**
+
+![alt Image of config in FeatureIDE(GumballMachineV2 Slot_Model]
+(https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_config.png)
+
+**Model Tree**
+
+![alt Model]
+(https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_model.png)
+
+**Output of the above configuration**
+![alt Output] (https://github.com/saiprithipa/cmpe202/blob/master/lab10/output/GumballMachineV2_SlotModel_COST50_Outputfull.png)
 
 # Comparison of GumballMachine(Lab1) and GumballMachineV1(Lab10) - Object Oriented vs Feature Oriented
 
@@ -50,3 +64,6 @@ I was able to change the config from CrankModel to SlotModel and vide versa.
 The model.xml shows the tree structure of which features are optional or alternative or mandatory.
 In CrankModel configuration could be changed between ONEQTR and TWOQTR.
 Whenever changes were made to the config, the .aj file was added to the default package or moved from the default package. (like CRANKMODEL.aj was kept inside default package for crankmodel config and SLOTMODEL.aj was kept out of the default package)
+
+Object Oriented Programming treats data and its behavior as a single thing called object.
+Feature Oriented Programming treats data and behavior as different things and this is done for clarity.
